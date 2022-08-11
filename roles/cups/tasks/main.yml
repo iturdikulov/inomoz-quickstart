@@ -21,8 +21,6 @@
     regexp: SystemGroup
     state: present
     line: "SystemGroup sys root printadmin"
-  notify:
-    - restart cups
 
 - name: Add the user to the print and print admin groups
   user:
@@ -34,6 +32,6 @@
 
 - name: Enable and start CUPS
   service:
-    name: cups.service
+    name: cups.socket
     enabled: yes
     state: started
