@@ -1,0 +1,111 @@
+user:
+    name: inom
+    uid: 1000
+    group: inom
+    shell: /usr/bin/zsh
+    email: i@inomoz.ru
+    log:
+        dir: log
+        rotate: 8
+
+hostname: baikal
+
+dotfiles:
+    url: git@github.com:inomoz/dotfiles.git
+    destination: Projects/dotfiles
+
+aur:
+    dir: aur
+    packages:
+        - pikaur
+        - zsh-theme-powerlevel10k-git
+
+ssh:
+    port: 22
+    user_key: /root/id_rsa
+    enable_sshd: False
+
+gnupg:
+    enable_agent: True
+    emulate_ssh: True
+
+editors:
+    - emacs
+
+base_packages:
+    - base-devel
+    - man-db
+    - man-pages
+    - pacman-contrib
+    - dmidecode
+    - tmux
+    - git
+    - rsync
+    - coreutils
+    - dateutils
+    - arch-wiki-lite
+    - jq
+    - termdown
+    - fzf
+    - cpulimit
+
+filesystem_packages:
+    - exfat-utils
+    - gptfdisk
+
+browser_choices:
+    - firefox -P default
+    - firefox -P work
+    - firewarden chromium
+    - firewarden -c qutebrowser
+    - tor-browser-en
+    - play
+    - qcode
+    - "| xclip -selection c"
+
+postgresql:
+    enable: True
+    root: /home/postgres
+
+bluetooth:
+    disable: False
+
+firejail:
+    blacklist:
+        - ~/.calendars
+        - ~/.config/vdirsyncer
+        - ~/.contacts
+        - ~/.keys
+        - ~/.mbsyncrc
+        - ~/.offlineimap
+        - ~/.offlineimaprc
+        - ~/.password-store
+        - ~/.vdirsyncer
+        - ~/Projects
+
+journal:
+    max_size: 500M
+
+udisks:
+    auto_mount: False
+    shared_mount: True
+
+goesimage:
+    run_time: 15min
+    run_boot_delay: 2min
+    flags: -w -e
+
+base_fonts:
+    - adobe-source-code-pro-fonts
+    - cantarell-fonts
+    - noto-fonts
+    - ttf-dejavu
+    - ttf-fira-mono
+    - ttf-inconsolata
+    - ttf-opensans
+    - ttf-ubuntu-font-family
+
+syncthing:
+    open_ports: true
+
+kernel_parameters: "quiet consoleblank=60"
