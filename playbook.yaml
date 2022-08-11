@@ -7,6 +7,7 @@
     - { role: systemd, tags: ['systemd'] }
     - { role: dconf, tags: ['dconf'] }
     - { role: android, tags: ['android'] }
+    - { role: archive, tags: ['archive'] }
     - { role: borg, tags: ['borg'] }
     - { role: browsers, tags: ['browsers'] }
     - { role: clipboard, tags: ['clipboard'] }
