@@ -1,8 +1,45 @@
-- name: My first play
-  hosts: localhost
-  tasks:
-   - name: Ping my hosts
-     ansible.builtin.ping:
-   - name: Print message
-     ansible.builtin.debug:
-       msg: Hello world
+---
+- hosts: localhost
+  become: yes
+  roles:
+    - { role: base, tags: [ 'base' ] }
+    - { role: android, tags: [ 'android' ] }
+    - { role: borg, tags: [ 'borg' ] }
+    - { role: browsers, tags: [ 'browsers' ] }
+    - { role: clipboard, tags: [ 'clipboard' ] }
+    - { role: colemak-dh, tags: [ 'colemak-dh' ] }
+    - { role: cups, tags: [ 'cups' ] }
+    - { role: dconf, tags: [ 'dconf' ] }
+    - { role: dotfiles, tags: [ 'dotfiles' ] }
+    - { role: editors, tags: [ 'editors' ] }
+    - { role: filesystems, tags: [ 'filesystems' ] }
+    - { role: fonts, tags: [ 'fonts' ] }
+    - { role: gnupg, tags: [ 'gnupg' ] }
+    - { role: goesimage, tags: [ 'goesimage' ] }
+    - { role: logitech, tags: [ 'logitech' ] }
+    - { role: media, tags: [ 'media' ] }
+    - { role: mirrorlist, tags: [ 'mirrorlist' ] }
+    - { role: mpv, tags: [ 'mpv  ' ] }
+    - { role: nettools, tags: [ 'nettools' ] }
+    - { role: office, tags: [ 'office' ] }
+    - { role: onlykey, tags: [ 'onlykey' ] }
+    - { role: pass, tags: [ 'pass ' ] }
+    - { role: pdf, tags: [ 'pdf  ' ] }
+    - { role: postgresql, tags: [ 'postgresql' ] }
+    - { role: pydev, tags: [ 'pydev' ] }
+    - { role: qbittorrent-nox, tags: [ 'qbittorrent-nox' ] }
+    - { role: ripgrep, tags: [ 'ripgrep' ] }
+    - { role: sound, tags: [ 'sound' ] }
+    - { role: spell, tags: [ 'spell' ] }
+    - { role: ssh, tags: [ 'ssh  ' ] }
+    - { role: sysctl, tags: [ 'sysctl' ] }
+    - { role: sysmon, tags: [ 'sysmon' ] }
+    - { role: systemd, tags: [ 'systemd' ] }
+    - { role: udisks, tags: [ 'udisks' ] }
+    - { role: virtualenv, tags: [ 'virtualenv' ] }
+    - { role: visidata, tags: [ 'visidata' ] }
+    - { role: x, tags: [ 'x' ] }
+    - { role: zeal, tags: [ 'zeal' ] }
+vars_prompt:
+  - name: user_password
+    prompt: "Enter desired user password"

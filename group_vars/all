@@ -19,6 +19,11 @@ aur:
     packages:
         - pikaur
         - zsh-theme-powerlevel10k-git
+        - inkscape-open-symbols
+        - quickemu
+        - nvm
+        - ytfzf
+        - wtwitch
 
 ssh:
     port: 22
@@ -31,8 +36,10 @@ gnupg:
 
 editors:
     - emacs
+    - nvim
 
 base_packages:
+    - openssh
     - base-devel
     - man-db
     - man-pages
@@ -48,10 +55,42 @@ base_packages:
     - termdown
     - fzf
     - cpulimit
+    - aria2
+    - aws-cli
+    - ledger
+    - krita
+    - darktable
+    - inkscape
+    - hdparm
+    - tor
+    - torsocks
+    - pkgfile
+    - klavaro
+    - xclip
+    - dunst
+    - wine
+    - ipython
+    - parallel
+    - ffmpeg
+    - maim
+    - translate-shell
+    - sc-im
+    - blender
+    - godot
+    - darktable
+    - curl
+    - rclone
+    - fd
+    - ncdu
+    - yt-dlp
+    - remmina
+    - watchexec
 
 filesystem_packages:
     - exfat-utils
     - gptfdisk
+    - fdupes
+    - nfs-utils
 
 browser_choices:
     - firefox -P default
@@ -65,7 +104,7 @@ browser_choices:
 
 postgresql:
     enable: True
-    root: /home/postgres
+    root: /mnt/var/lib/postgres
 
 bluetooth:
     disable: False
@@ -107,5 +146,3 @@ base_fonts:
 
 syncthing:
     open_ports: true
-
-kernel_parameters: "quiet consoleblank=60"

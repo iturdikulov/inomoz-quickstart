@@ -1,0 +1,39 @@
+---
+- name: Install Zathura and dependencies
+  pacman:
+    name:
+      - zathura-pdf-mupdf
+      - zathura-ps
+      - zathura-cb
+      - zathura-djvu
+    state: present
+  tags:
+    - zathura
+
+- name: Set Zathura as default PDF viewer
+  lineinfile:
+    dest: /etc/xdg/mimeapps.list
+    regexp: "^application/pdf"
+    state: present
+    line: "application/pdf=org.pwmt.zathura-pdf-mupdf.desktop"
+  tags:
+    - zathura
+
+- name: Jail Zathura
+  file:
+    src: /usr/bin/firejail
+    dest: /usr/local/bin/zathura
+    state: link
+  tags:
+    - zathura
+    - firejail
+
+
+- name: Install tesseract-data
+  pacman:
+    name:
+      - tesseract-data-eng
+      - tesseract-data-rus
+    state: present
+  tags:
+    - tesseract

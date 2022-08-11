@@ -1,0 +1,13 @@
+---
+- name: Install alsa-utils
+  pacman:
+    name: alsa-utils
+    state: present
+
+- name: Install Pipewire
+  pacman:
+    name:
+      - pipewire
+      - pipewire-pulse
+      - pavucontrol
+    state: present

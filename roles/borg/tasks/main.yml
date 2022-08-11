@@ -1,0 +1,7 @@
+---
+- name: Install borg
+  pacman:
+    name:
+      - python-llfuse
+      - borg
+    state: present

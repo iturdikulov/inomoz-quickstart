@@ -1,0 +1,10 @@
+---
+- name: Install qbittorrent-nox
+  pacman: name=qbittorrent-nox state=present
+
+- name: Jail qbittorrent-nox
+  file: src=/usr/bin/firejail
+        dest=/usr/local/bin/qbittorrent-nox
+        state=link
+  tags:
+    - firejail

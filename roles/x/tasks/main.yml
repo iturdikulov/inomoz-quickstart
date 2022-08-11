@@ -1,0 +1,34 @@
+---
+- name: Install Xorg
+  pacman: name=xorg-server state=present
+
+- name: Install Xinit
+  pacman: name=xorg-xinit state=present
+
+- name: Install xmodmap
+  pacman: name=xorg-xmodmap state=present
+
+- name: Install xdpyinfo
+  pacman: name=xorg-xdpyinfo state=present
+
+- name: Install xev
+  pacman: name=xorg-xev state=present
+
+- name: Install xorg-sessreg
+  pacman: name=xorg-sessreg state=present
+
+- name: Install xorg-xwininfo
+  pacman: name=xorg-xwininfo state=present
+
+- name: Install xautomation
+  pacman: name=xautomation state=present
+
+- name: Add user to video group
+  user: name={{ user.name }} groups=video append=yes
+  tags:
+    - user
+
+- include: sxhkd.yml
+- include: autorandr.yml
+- include: autocutsel.yml
+- include: xdg.yml

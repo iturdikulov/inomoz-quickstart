@@ -1,0 +1,8 @@
+Section "InputClass"
+        Identifier "libinput keyboard catchall"
+        MatchIsKeyboard "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+        Option "XkbLayout" "us,ru"
+        Option "XkbVariant" "colemak,qwerty"
+EndSection

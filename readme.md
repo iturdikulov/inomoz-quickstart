@@ -16,3 +16,13 @@ $ git submodule init && git submodule update
 
 # Special thanks
 - https://github.com/pigmonkey/spark
+
+# TODO
+systemd... resolv.... ntp
+user ssh key
+validate systemd enabled services, like reflector
+
+roles/nmtrust/tasks/unit.yml
+
+
+ansible-playbook playbook.yml --tags "fonts,laptop"

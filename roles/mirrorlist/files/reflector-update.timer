@@ -1,0 +1,11 @@
+[Unit]
+Description=Reflector Update Timer
+
+[Timer]
+Unit=reflector-update.service
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=3h
+
+[Install]
+WantedBy=timers.target
