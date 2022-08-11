@@ -42,6 +42,8 @@ sudo ansible-playbook -i localhost playbook.yaml --tags "base"
 # Manual tests
 ArchLinux 5.18.16-arch1-1 
 
+Some tests on complex tasks:
+
 - [ ] android, adb worked
 - [ ] base
 - [ ] borg, borg init (tmp), borg mount
