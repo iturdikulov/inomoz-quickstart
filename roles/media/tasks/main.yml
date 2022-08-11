@@ -1,7 +1,6 @@
 ---
 - include: beets.yml
 - include: imagemagick.yml
-- include: teiler.yml
 - include: flac2all.yml
 - include: qcode.yml
 
