@@ -1,4 +1,5 @@
 # My quick-start archlinux installation workflow
+# NOT TESTED!
 
 1. First, sync mirrors and install Ansible:
 
