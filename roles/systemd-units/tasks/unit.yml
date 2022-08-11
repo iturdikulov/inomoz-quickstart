@@ -1,0 +1,35 @@
+- name: Enable and start {{ unit }}
+  systemd:
+      name: "{{ unit }}"
+      enabled: yes
+      state: started
+  when: run_on == "all" and user_unit is not defined
+
+- name: Disable {{ unit }}
+  systemd:
+      name: "{{ unit }}"
+      enabled: no
+  when: run_on != "all" and user_unit is not defined
+
+- name: Enable and start {{ unit }} for user
+  systemd:
+      name: "{{ unit }}"
+      enabled: yes
+      state: started
+      scope: user
+  become: yes
+  become_user: "{{ user.name }}"
+  environment:
+    XDG_RUNTIME_DIR: "/run/user/{{ user.uid }}"
+  when: run_on == "all" and user_unit is defined and user_unit == true
+
+- name: Disable user {{ unit }} for user
+  systemd:
+      name: "{{ unit }}"
+      enabled: no
+      scope: user
+  become: yes
+  become_user: "{{ user.name }}"
+  environment:
+    XDG_RUNTIME_DIR: "/run/user/{{ user.uid }}"
+  when: run_on != "all" and user_unit is defined and user_unit == true

@@ -1,4 +1,10 @@
 ---
+- name: Get user pass
+  pause:
+    prompt: "Please enter the user pass"
+    echo: yes
+  register: result
+
 - name: Create user group
   group:
     name: "{{ user.group }}"
@@ -10,7 +16,7 @@
   user:
     name: "{{ user.name }}"
     group: "{{ user.group }}"
-    password: "{{ user_password|password_hash('sha512') }}"
+    password: "{{ result.user_input|password_hash('sha512') }}"
     shell: "{{ user.shell }}"
     update_password: on_create
     uid: "{{ user.uid }}"
