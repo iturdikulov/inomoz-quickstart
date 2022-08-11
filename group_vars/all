@@ -95,8 +95,8 @@ filesystem_packages:
 browser_choices:
     - firefox -P default
     - firefox -P work
-    - firewarden chromium
-    - firewarden -c qutebrowser
+    - chromium
+    - qutebrowser
     - tor-browser-en
     - play
     - qcode
