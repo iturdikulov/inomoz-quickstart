@@ -28,7 +28,7 @@
   tags:
     - user
 
-- include: sxhkd.yml
-- include: autorandr.yml
-- include: autocutsel.yml
-- include: xdg.yml
+- include_tasks: sxhkd.yml
+- include_tasks: autorandr.yml
+- include_tasks: autocutsel.yml
+- include_tasks: xdg.yml

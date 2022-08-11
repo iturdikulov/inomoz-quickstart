@@ -1,8 +1,8 @@
 ---
-- include: beets.yml
-- include: imagemagick.yml
-- include: flac2all.yml
-- include: qcode.yml
+- include_tasks: beets.yml
+- include_tasks: imagemagick.yml
+- include_tasks: flac2all.yml
+- include_tasks: qcode.yml
 
 - name: Install misc media codecs and helpers
   pacman:
