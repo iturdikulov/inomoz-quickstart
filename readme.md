@@ -39,7 +39,46 @@ sudo ansible-playbook -i localhost playbook.yaml --tags "base"
 - user ssh key info
 - validate systemd enabled services, like reflector
 
-# TODO tests
-- browsers
-- base
-- colemak-dh, voconsole, etc... 
+# Manual tests
+ArchLinux 5.18.16-arch1-1 
+
+- [ ] android, adb worked
+- [ ] base
+- [ ] borg, borg init (tmp), borg mount
+- [ ] browsers
+- [ ] clipboard
+- [ ] colemak-dh, vconsole works, ru layout works
+- [ ] cups
+- [ ] dconf
+- [ ] dotfiles
+- [ ] editors
+- [ ] filesystems
+- [ ] firejail
+- [ ] fonts
+- [ ] gnupg
+- [ ] goesimage
+- [ ] logitech
+- [ ] media
+- [ ] mirrorlist
+- [ ] mpv
+- [ ] nettools
+- [ ] office
+- [ ] onlykey
+- [ ] pass
+- [ ] pdf
+- [ ] postgresql
+- [ ] pydev
+- [ ] qbittorrent-nox
+- [ ] ripgrep
+- [ ] sound
+- [ ] spell
+- [ ] ssh
+- [ ] sysctl
+- [ ] sysmon
+- [ ] systemd
+- [ ] systemd-units
+- [ ] udisks
+- [ ] virtualenv
+- [ ] visidata
+- [ ] x
+- [ ] zeal
