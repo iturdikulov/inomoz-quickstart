@@ -85,6 +85,7 @@ base_packages:
     - yt-dlp
     - remmina
     - watchexec
+    - usbutils
 
 filesystem_packages:
     - exfat-utils
