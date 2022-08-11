@@ -3,16 +3,20 @@
 
 1. First, sync mirrors and install Ansible:
 
-$ pacman -Syy python-passlib ansible
+```shell
+pacman -Syy python-passlib ansible
+```
 
 2. Second, install and update the submodules:
 
-$ git submodule init && git submodule update
+```shell
+git submodule init && git submodule update
+```
 
 3. Run the playbook as root (playbooks will use group_vars/all configuration, including username).
 
-```
-# ansible-playbook -i localhost playbook.yml
+```shell
+sudo ansible-playbook -i localhost playbook.yml
 ```
 
 # Special thanks
@@ -24,6 +28,5 @@ user ssh key
 validate systemd enabled services, like reflector
 
 roles/nmtrust/tasks/unit.yml
-
 
 ansible-playbook playbook.yml --tags "fonts,laptop"
