@@ -4,7 +4,7 @@
 1. First, sync mirrors and install Ansible:
 
 ```shell
-pacman -Syy python-passlib ansible
+sudo pacman -Syy python-passlib ansible
 ```
 
 2. Second, install and update the submodules:
@@ -16,13 +16,13 @@ git submodule init && git submodule update
 3. Run the playbook as root (playbooks will use group_vars/all configuration, including username).
 
 ```shell
-sudo ansible-playbook -i localhost playbook.yml
+sudo ansible-playbook -i localhost playbook.yaml
 ```
 
 # Run specific playbook
 
 ```shell
-sudo ansible-playbook -i localhost playbook.yml --tags "base"
+sudo ansible-playbook -i localhost playbook.yaml --tags "base"
 ```
 
 # Special thanks
