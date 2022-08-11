@@ -2,6 +2,6 @@
 - name: Install borg
   pacman:
     name:
-      - python-llfuse
+      - python-llfuse # mount backups
       - borg
     state: present
