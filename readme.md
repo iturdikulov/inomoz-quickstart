@@ -32,3 +32,8 @@ sudo ansible-playbook -i localhost playbook.yaml --tags "base"
 - systemd... resolv.... ntp
 - user ssh key info
 - validate systemd enabled services, like reflector
+
+# TODO tests
+- browsers
+- base
+- colemak-dh, voconsole, etc... 
