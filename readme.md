@@ -19,6 +19,12 @@ git submodule init && git submodule update
 sudo ansible-playbook -i localhost playbook.yaml
 ```
 
+4. It's recommended to reboot, to validate the installation.
+
+```shell
+reboot
+```
+
 # Run specific playbook
 
 ```shell
