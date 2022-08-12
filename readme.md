@@ -89,7 +89,8 @@ for example in user.yml "/mnt/var/" used as prefix for logs
 - https://github.com/pigmonkey/spark
 
 # TODO
-
+- dmenu install
+- clipmenu instead greenclip
 - systemd... resolv.... ntp
 - user ssh key info
 - validate systemd enabled services, like reflector
