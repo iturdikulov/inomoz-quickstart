@@ -38,8 +38,33 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 
 # Install dotfiles
+```shell
+git clone https://github.com/inomoz/dotfiles ~/Projects/dotfiles/
+cd ~/Projects/suckless/
+git log
+
+# Make symlinks using gnu stow
+stow --target=/home/inom */
+```
 
 # Install & configure suckless software
+```shell
+mkdir -p ~/Projects/suckless/
+cd ~/Projects/suckless/
+git clone https://github.com/inomoz/dwm
+git clone https://github.com/inomoz/st
+git clone https://github.com/inomoz/dwmblocks
+
+cd dwm
+makepkg -fsri
+
+cd ../st
+makepkg -fsri
+
+cd ../dwmblocks
+make
+sudo make install
+```
 
 # Install other packages
 sudo ansible-playbook -i localhost playbook.yaml --skip-tags="base,gnupg,ssh"
