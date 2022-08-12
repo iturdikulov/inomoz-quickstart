@@ -2,13 +2,15 @@
 
 # NOT TESTED!
 
+Clone this repository and run commands in the project root directory.
+
 1. First, sync mirrors and install Ansible with dependencies
 
 ```shell
 sudo pacman -Syy python-passlib ansible
 ```
 
-2. Second, install and update the submodules:
+2. Second, install and update the submodules, check carefully group_vars/all file (configuration).
 
 ```shell
 git submodule init && git submodule update
@@ -26,12 +28,6 @@ sudo ansible-playbook -i localhost playbook.yaml
 reboot
 ```
 
-# Run specific playbook
-
-```shell
-sudo ansible-playbook -i localhost playbook.yaml --tags "base"
-```
-
 # Info
 
 some directories are preconfigured, you can change them if you want
@@ -46,6 +42,8 @@ for example in user.yml "/mnt/var/" used as prefix for logs
 - systemd... resolv.... ntp
 - user ssh key info
 - validate systemd enabled services, like reflector
+- https://habr.com/ru/post/479540/
+- https://venthur.de/2021-12-19-managing-dotfiles-with-stow.html
 
 # Manual tests
 

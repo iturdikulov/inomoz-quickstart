@@ -39,3 +39,9 @@
   environment:
     XDG_RUNTIME_DIR: "/run/user/{{ user.uid }}"
   when: gnupg.enable_agent == True and gnupg.emulate_ssh == True
+
+- name: Import private gpg key
+  command: "gpg --import {{ user.gpg_key }}"
+  become: yes
+  become_user: "{{ user.name }}"
+

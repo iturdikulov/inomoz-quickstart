@@ -3,6 +3,9 @@
   become: yes
   roles:
     - { role: base, tags: ['base'] }
+    - { role: gnupg, tags: ['gnupg'] }
+    - { role: ssh, tags: ['ssh'] }
+    - { role: dotfiles, tags: ['dotfiles'] }
     - { role: x, tags: ['x'] }
     - { role: systemd, tags: ['systemd'] }
     - { role: dconf, tags: ['dconf'] }
@@ -13,11 +16,9 @@
     - { role: clipboard, tags: ['clipboard'] }
     - { role: colemak-dh, tags: ['colemak-dh'] }
     - { role: cups, tags: ['cups'] }
-    - { role: dotfiles, tags: ['dotfiles'] }
     - { role: editors, tags: ['editors'] }
     - { role: filesystems, tags: ['filesystems'] }
     - { role: fonts, tags: ['fonts'] }
-    - { role: gnupg, tags: ['gnupg'] }
     - { role: goesimage, tags: ['goesimage'] }
     - { role: logitech, tags: ['logitech'] }
     - { role: media, tags: ['media'] }
@@ -34,7 +35,6 @@
     - { role: ripgrep, tags: ['ripgrep'] }
     - { role: sound, tags: ['sound'] }
     - { role: spell, tags: ['spell'] }
-    - { role: ssh, tags: ['ssh  '] }
     - { role: sysctl, tags: ['sysctl'] }
     - { role: sysmon, tags: ['sysmon'] }
     - { role: udisks, tags: ['udisks'] }
