@@ -23,7 +23,6 @@ aur:
         - quickemu
         - nvm
         - ytfzf
-        - wtwitch
         - sc-im
 
 ssh:
