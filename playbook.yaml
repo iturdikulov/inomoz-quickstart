@@ -5,7 +5,6 @@
     - { role: base, tags: ['base'] }
     - { role: gnupg, tags: ['gnupg'] }
     - { role: ssh, tags: ['ssh'] }
-    - { role: dotfiles, tags: ['dotfiles'] }
     - { role: x, tags: ['x'] }
     - { role: systemd, tags: ['systemd'] }
     - { role: dconf, tags: ['dconf'] }
