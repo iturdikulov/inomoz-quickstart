@@ -46,6 +46,7 @@ base_packages:
     - dmidecode
     - tmux
     - git
+    - diff-so-fancy
     - rsync
     - coreutils
     - dateutils
