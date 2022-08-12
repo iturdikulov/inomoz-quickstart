@@ -24,15 +24,30 @@ sudo ansible-playbook -i localhost playbook.yaml --tags="base,gnupg,ssh"
 
 # import gpg key
 gpg --import ../gpg.asc
+rm ../gpg.asc
 
-# install other packages
+# Add key to sshcontrol
+gpg --list-keys --with-keygrip
+# find key under pub section Keygrip = ...
+echo '123....' >> ~/.gnupg/sshcontrol
+
+# Enable SSH_AGENT_PID
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+fi
+
+# Install dotfiles
+
+# Install & configure suckless software
+
+# Install other packages
 sudo ansible-playbook -i localhost playbook.yaml --skip-tags="base,gnupg,ssh"
 ```
 
 4. It's recommended to remove imported gpg key and reboot, to validate the installation.
 
 ```shell
-rm ../gpg.asc
 reboot
 ```
 
