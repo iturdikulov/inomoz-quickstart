@@ -88,7 +88,8 @@ base_packages:
     - usbutils
     - lm_sensors
     - feh
-    - stow
+    - yadm
+
 
 filesystem_packages:
     - exfat-utils
