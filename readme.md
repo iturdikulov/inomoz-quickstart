@@ -19,12 +19,20 @@ git submodule init && git submodule update
 3. Run the playbook as root (playbooks will use group_vars/all configuration, including username).
 
 ```shell
-sudo ansible-playbook -i localhost playbook.yaml
+# install core
+sudo ansible-playbook -i localhost playbook.yaml --tags="base,gnupg,ssh"
+
+# import gpg key
+gpg --import ../gpg.asc
+
+# install other packages
+sudo ansible-playbook -i localhost playbook.yaml --skip-tags="base,gnupg,ssh"
 ```
 
-4. It's recommended to reboot, to validate the installation.
+4. It's recommended to remove imported gpg key and reboot, to validate the installation.
 
 ```shell
+rm ../gpg.asc
 reboot
 ```
 

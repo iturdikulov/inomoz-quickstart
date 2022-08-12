@@ -4,7 +4,6 @@ user:
     group: inom
     shell: /usr/bin/zsh
     email: i@inomoz.ru
-    gpg_key: /home/inom/gpg.asc
     log:
         dir: log
         rotate: 8
