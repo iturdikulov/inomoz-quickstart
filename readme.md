@@ -46,9 +46,12 @@ Some tests on complex tasks:
 
 - [ ] android, `adb devices` - show some devices connected, if they are connected
 - [ ] base
+ 
 - [ ] browsers:
   - w3m, lynx, firefox, chromium, qutebrowser... can open url: http://acid3.acidtests.org/, `xdg-open http://acid3.acidtests.org/`
   - some browsers at first time require manual launch or extra configuration (tor browser)
+- [ ] media
+ 
 - [ ] clipboard
 - [ ] colemak-dh, vconsole works, ru layout works
 - [ ] cups
@@ -61,7 +64,6 @@ Some tests on complex tasks:
 - [ ] gnupg
 - [ ] goesimage
 - [ ] logitech
-- [ ] media
 - [ ] mirrorlist
 - [ ] mpv
 - [ ] nettools
