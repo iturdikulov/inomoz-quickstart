@@ -48,7 +48,8 @@ Some tests on complex tasks:
 - [ ] base
  
 - [ ] browsers:
-  - w3m, lynx, firefox, chromium, qutebrowser... can open url: http://acid3.acidtests.org/, `xdg-open http://acid3.acidtests.org/`
+  - w3m, lynx 
+  - using rofi: firefox, chromium, qutebrowser... can open url: http://acid3.acidtests.org/, `xdg-open http://acid3.acidtests.org/`
   - some browsers at first time require manual launch or extra configuration (tor browser)
 - [ ] media
  

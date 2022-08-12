@@ -24,6 +24,7 @@ aur:
         - nvm
         - ytfzf
         - wtwitch
+        - sc-im
 
 ssh:
     port: 22
@@ -74,7 +75,6 @@ base_packages:
     - ffmpeg
     - maim
     - translate-shell
-    - sc-im
     - blender
     - godot
     - darktable
