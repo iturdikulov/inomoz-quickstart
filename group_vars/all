@@ -19,7 +19,7 @@ aur:
     packages:
         - pikaur
         - zsh-theme-powerlevel10k-git
-        - inkscape-open-symbols
+        - inkscape-open-symbols-git
         - quickemu
         - nvm
         - ytfzf
