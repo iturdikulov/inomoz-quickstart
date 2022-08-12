@@ -1,7 +1,7 @@
 # My quick-start archlinux installation workflow
 # NOT TESTED!
 
-1. First, sync mirrors and install Ansible:
+1. First, sync mirrors and install Ansible with dependencies
 
 ```shell
 sudo pacman -Syy python-passlib ansible
@@ -44,10 +44,11 @@ ArchLinux 5.18.16-arch1-1
 
 Some tests on complex tasks:
 
-- [ ] android, adb worked
+- [ ] android, `adb devices` - show some devices connected, if they are connected
 - [ ] base
-- [ ] borg, borg init (tmp), borg mount
-- [ ] browsers
+- [ ] browsers:
+  - w3m, lynx, firefox, chromium, qutebrowser... can open url: http://acid3.acidtests.org/, `xdg-open http://acid3.acidtests.org/`
+  - some browsers at first time require manual launch or extra configuration (tor browser)
 - [ ] clipboard
 - [ ] colemak-dh, vconsole works, ru layout works
 - [ ] cups
