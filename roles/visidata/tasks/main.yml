@@ -9,6 +9,8 @@
       - python-pandas
       - python-requests
       - python-xlrd
+      - python-matplotlib
+      - python-numpy
     state: present
 
 - name: Push visidata desktop file
