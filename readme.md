@@ -37,23 +37,26 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
   export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
 
+# Enable tty
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null
+
 # Install dotfiles
 ```shell
-git clone https://github.com/inomoz/dotfiles ~/Projects/dotfiles/
-cd ~/Projects/dotfiles/
-git log
+yadm clone git@github.com:inomoz/dotfiles.git
+yadm reset --hard origin/main # be careful with this command
+ls -lFa ~
 
-# Make symlinks using gnu stow
-stow --target=/home/inom */
+# Copy your private config
 ```
 
 # Install & configure suckless software
 ```shell
 mkdir -p ~/Projects/suckless/
 cd ~/Projects/suckless/
-git clone https://github.com/inomoz/dwm
-git clone https://github.com/inomoz/st
-git clone https://github.com/inomoz/dwmblocks
+git clone git@github.com:inomoz/dwm.git
+git clone git@github.com:inomoz/st.git
+git clone git@github.com:inomoz/slstatus.git
 
 cd dwm
 makepkg -fsri
@@ -61,7 +64,7 @@ makepkg -fsri
 cd ../st
 makepkg -fsri
 
-cd ../dwmblocks
+cd ../slstatus
 make
 sudo make install
 ```
