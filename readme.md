@@ -1,4 +1,5 @@
 # My quick-start archlinux installation workflow
+
 # NOT TESTED!
 
 1. First, sync mirrors and install Ansible with dependencies
@@ -31,28 +32,46 @@ reboot
 sudo ansible-playbook -i localhost playbook.yaml --tags "base"
 ```
 
+# Info
+
+some directories are preconfigured, you can change them if you want
+for example in user.yml "/mnt/var/" used as prefix for logs
+
 # Special thanks
+
 - https://github.com/pigmonkey/spark
 
 # TODO
+
 - systemd... resolv.... ntp
 - user ssh key info
 - validate systemd enabled services, like reflector
 
 # Manual tests
-ArchLinux 5.18.16-arch1-1 
+
+ArchLinux 5.18.16-arch1-1
 
 Some tests on complex tasks:
 
 - [ ] android, `adb devices` - show some devices connected, if they are connected
-- [ ] base
  
-- [ ] browsers:
-  - w3m, lynx 
-  - using rofi: firefox, chromium, qutebrowser... can open url: http://acid3.acidtests.org/, `xdg-open http://acid3.acidtests.org/`
-  - some browsers at first time require manual launch or extra configuration (tor browser)
+- [ ] base, contains a lot of packages and require a lot of time to install
+    - [ ] check pacman mirrors `sudo pacman -Syy`, must include core, extra, community, multilib
+    - [ ] validate hostname `hostname -f`
+    - [ ] validate group `id`
+    - [ ] validate logrotate `logrotate --debug /etc/logrotate.conf`, home/...
+    - [ ] run some applications: `tmux`, `git`, `ytfzf`, `ledger`, `ipython`, `sc-im`,  `bash`, `zsh`,  `krita`
+      , `inkscape`, `darktable`, `blender`, `godot`, `maim`,
+    - [ ] validate paccache service `systemctl status paccache.timer`
+
 - [ ] media
- 
+
+- [ ] browsers:
+    - w3m, lynx
+    - using rofi: firefox, chromium, qutebrowser... can open url: http://acid3.acidtests.org/
+      , `xdg-open http://acid3.acidtests.org/`
+    - some browsers at first time require manual launch or extra configuration (tor browser)
+
 - [ ] clipboard
 - [ ] colemak-dh, vconsole works, ru layout works
 - [ ] cups
