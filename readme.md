@@ -40,7 +40,7 @@ fi
 # Install dotfiles
 ```shell
 git clone https://github.com/inomoz/dotfiles ~/Projects/dotfiles/
-cd ~/Projects/suckless/
+cd ~/Projects/dotfiles/
 git log
 
 # Make symlinks using gnu stow
