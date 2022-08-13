@@ -143,9 +143,9 @@ udisks:
     shared_mount: True
 
 goesimage:
-    run_time: 15min
+    run_time: 45min
     run_boot_delay: 2min
-    flags: -e
+    flags: -e -s large
 
 base_fonts:
     - adobe-source-code-pro-fonts
