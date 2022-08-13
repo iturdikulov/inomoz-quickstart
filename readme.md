@@ -111,7 +111,6 @@ ArchLinux 5.18.16-arch1-1
 Some tests on complex tasks:
 - [x] android  
   `adb devices` - show some devices connected, if they are connected
-- [ ] archive
 - [x] arduino  
   `arduino-cli board list`
 - [x] base  
@@ -122,36 +121,34 @@ Some tests on complex tasks:
   - run some applications: `tmux`, `git`, `ytfzf`, `ledger`, `ipython`, `sc-im`,  `bash`, `zsh`,  `krita`
     , `inkscape`, `darktable`, `blender`, `godot`, `maim`,
   - validate paccache service `systemctl status paccache.timer`
-- [ ] borg
 - [ ] browsers  
   - w3m, lynx
   - using rofi: firefox, chromium, qutebrowser... can open url:
     , `xdg-open http://acid3.acidtests.org/`, `xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ`
   - some browsers at first time require manual launch or extra configuration (tor browser)
 - [ ] colemak-dh  
-  vconsole works, en,ru layout works
-- [ ] cups
-- [ ] dconf
+  vconsole works, layout works, layout switch works
+- [ ] cups  
+  test print page
 - [x] docker  
   `docker run hello-world`, run this after re-login
-- [ ] editors
-- [ ] filesystems
-- [ ] firejail
-- [ ] fonts
 - [ ] gnupg
 - [ ] goesimage
-- [ ] media
+- [ ] media  
+  copy something to clipboard and run `qcode`
 - [ ] mirrorlist
 - [ ] mpv
+  - mpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  - mvi 'path_to_image_file'
+  - umpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 - [ ] nettools  
   run `wireshark`
 - [ ] office
 - [ ] onlykey
-- [ ] pass
-- [ ] pdf
+- [ ] pdf  
+  `zathura path_to_pdf_file`
 - [ ] postgresql
 - [ ] pydev
-- [ ] ripgrep
 - [ ] sound
 - [ ] spell
 - [ ] ssh
