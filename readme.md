@@ -20,7 +20,7 @@ git submodule init && git submodule update
 
 ```shell
 # install core
-sudo ansible-playbook -i localhost playbook.yaml --tags="base,gnupg,ssh"
+sudo ansible-playbook -i localhost playbook.yml --tags="base,gnupg,ssh"
 
 # import gpg key
 gpg --import ../gpg.asc
@@ -70,7 +70,7 @@ sudo make install
 ```
 
 # Install other packages
-sudo ansible-playbook -i localhost playbook.yaml --skip-tags="base,gnupg,ssh"
+sudo ansible-playbook -i localhost playbook.yml --skip-tags="base,gnupg,ssh"
 ```
 
 4. It's recommended to remove imported gpg key and reboot, to validate the installation.

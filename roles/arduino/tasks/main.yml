@@ -1,0 +1,8 @@
+---
+- name: Install arduino-cli
+  pacman:
+    name: arduino-cli
+    state: present
+
+- name: Install arduino core
+  ansible.builtin.shell: arduino-cli core install arduino:avr
