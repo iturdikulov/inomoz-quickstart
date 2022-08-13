@@ -36,6 +36,7 @@
     - { role: spell, tags: ['spell'] }
     - { role: sysctl, tags: ['sysctl'] }
     - { role: sysmon, tags: ['sysmon'] }
+    - { role: systemd-networkd, tags: ['systemd-networkd'] }
     - { role: udisks, tags: ['udisks'] }
     - { role: virtualenv, tags: ['virtualenv'] }
     - { role: visidata, tags: ['visidata'] }

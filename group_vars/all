@@ -9,6 +9,7 @@ user:
         rotate: 8
 
 hostname: baikal
+network_adapter: enp1s0
 
 dotfiles:
     url: git@github.com:inomoz/dotfiles.git
