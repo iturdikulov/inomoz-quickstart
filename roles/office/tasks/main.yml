@@ -1,10 +1,4 @@
 ---
-- name: Install pandoc and dependencies
-  pacman:
-    name:
-      - pandoc
-    state: present
-
 - name: Install texlive-core
   pacman:
     name: texlive-core
@@ -26,3 +20,11 @@
     user: "{{ user.name }}"
   tags:
     - aur
+
+- name: Install pandoc and dependencies
+  aur:
+    name: pandoc-bin
+    user: "{{ user.name }}"
+  tags:
+    - aur
+

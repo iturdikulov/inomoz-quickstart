@@ -110,6 +110,8 @@ for example in user.yml "/mnt/var/" used as prefix for logs
 ArchLinux 5.18.16-arch1-1
 
 Some tests on complex tasks:
+  Update mirrors before: `sudo pacman -Syy`
+
 - [x] android  
   `adb devices` - show some devices connected, if they are connected
 - [x] arduino  
@@ -144,7 +146,7 @@ Some tests on complex tasks:
 - [x] goesimage  
   - `systemctl enable --user --now goesimage.timer`
   - `systemctl status --user goesimage.timer`
-- [ ] media  
+- [x] media  
   copy something to clipboard and run `qcode`
 - [ ] mirrorlist  
   `cat /etc/pacman.d/mirrorlist|grep Reflector`
