@@ -37,7 +37,7 @@ gnupg:
 
 editors:
     - emacs-nativecomp
-    - nvim
+    - neovim
 
 base_packages:
     - openssh
