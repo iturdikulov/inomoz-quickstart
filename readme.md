@@ -121,11 +121,6 @@ Some tests on complex tasks:
   - run some applications: `tmux`, `git`, `ytfzf`, `ledger`, `ipython`, `sc-im`,  `bash`, `zsh`,  `krita`
     , `inkscape`, `darktable`, `blender`, `godot`, `maim`,
   - validate paccache service `systemctl status paccache.timer`
-- [ ] browsers  
-  - w3m, lynx
-  - using rofi: firefox, chromium, qutebrowser... can open url:
-    , `xdg-open http://acid3.acidtests.org/`, `xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ`
-  - some browsers at first time require manual launch or extra configuration (tor browser)
 - [ ] colemak-dh  
   vconsole works, layout works, layout switch works
 - [ ] cups  
@@ -163,3 +158,8 @@ Some tests on complex tasks:
 - [ ] wacom
 - [ ] x
 - [ ] zeal
+- [ ] browsers
+  - w3m, lynx
+  - using rofi: firefox, chromium, qutebrowser... can open url:
+    , `xdg-open http://acid3.acidtests.org/`, `xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+  - some browsers at first time require manual launch or extra configuration (tor browser)
