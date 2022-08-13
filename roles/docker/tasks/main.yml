@@ -17,3 +17,20 @@
     
 - name: Add user to docker group
   user: name={{ user.name }} groups=docker append=yes
+
+- name: create docker config directory
+  file:
+    path: /etc/docker
+    state: directory
+    mode: 0600
+    owner: root
+    group: root
+
+- name: configure docker daemon.json
+  template:
+    src: daemon.json.j2
+    dest: /etc/docker/daemon.json
+    mode: 0400
+    owner: root
+    group: root
+  notify: restart docker

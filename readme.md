@@ -122,11 +122,12 @@ Some tests on complex tasks:
   - run some applications: `tmux`, `git`, `ytfzf`, `ledger`, `ipython`, `sc-im`,  `bash`, `zsh`,  `krita`
     , `inkscape`, `darktable`, `blender`, `godot`, `maim`,
   - validate paccache service `systemctl status paccache.timer`
-- [ ] mpv
+- [x] mpv
   - mpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  - git clone https://github.com/inomoz/files_samples /tmp/files_samples
   - mvi 'path_to_image_file'
   - umpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-- [ ] browsers
+- [x] browsers
   - w3m, lynx
   - using dmenu: firefox, chromium, qutebrowser... can open url:
     , `xdg-open http://acid3.acidtests.org/`, `xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ`
