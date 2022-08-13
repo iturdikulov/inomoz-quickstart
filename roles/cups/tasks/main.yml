@@ -41,3 +41,8 @@
     name: rastertokpsl-git
     user: "{{ user.name }}"
 
+- name: Copy Cups drivers
+  copy:
+    src: files/    # note the '/' <-- !!!
+    dest: /etc/cups/ppd/
+

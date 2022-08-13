@@ -121,7 +121,7 @@ Some tests on complex tasks:
   - run some applications: `tmux`, `git`, `ytfzf`, `ledger`, `ipython`, `sc-im`,  `bash`, `zsh`,  `krita`
     , `inkscape`, `darktable`, `blender`, `godot`, `maim`,
   - validate paccache service `systemctl status paccache.timer`
-- [ ] colemak-dh  
+- [?] colemak-dh  
   vconsole works, layout works, layout switch works
 - [ ] cups  
   test print page
