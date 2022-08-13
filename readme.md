@@ -122,6 +122,15 @@ Some tests on complex tasks:
   - run some applications: `tmux`, `git`, `ytfzf`, `ledger`, `ipython`, `sc-im`,  `bash`, `zsh`,  `krita`
     , `inkscape`, `darktable`, `blender`, `godot`, `maim`,
   - validate paccache service `systemctl status paccache.timer`
+- [ ] mpv
+  - mpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  - mvi 'path_to_image_file'
+  - umpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+- [ ] browsers
+  - w3m, lynx
+  - using dmenu: firefox, chromium, qutebrowser... can open url:
+    , `xdg-open http://acid3.acidtests.org/`, `xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+  - some browsers at first time require manual launch or extra configuration (tor browser)
 - [?] colemak-dh  
   vconsole works, layout works, layout switch works
 - [x] cups  
@@ -138,10 +147,6 @@ Some tests on complex tasks:
   copy something to clipboard and run `qcode`
 - [ ] mirrorlist  
   `cat /etc/pacman.d/mirrorlist|grep Reflector`
-- [ ] mpv
-  - mpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-  - mvi 'path_to_image_file'
-  - umpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 - [ ] onlykey, passwordless measn you can enter password OR use onlykey    
   - passwordless sudo
   - passwordless ssh and gpg
