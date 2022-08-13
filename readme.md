@@ -142,8 +142,8 @@ Some tests on complex tasks:
   `docker run hello-world`, run this after re-login
 - [x] gnupg
   you able push to github with gpg signature
-- [ ] goesimage  
-  background image changed (require picom and feh)
+- [x] goesimage  
+  - `systemctl restart --user GOESImage`
 - [ ] media  
   copy something to clipboard and run `qcode`
 - [ ] mirrorlist  

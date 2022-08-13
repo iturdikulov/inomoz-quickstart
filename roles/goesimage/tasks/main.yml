@@ -19,4 +19,6 @@
     dest: /etc/systemd/user/goesimage.timer
   notify:
     - reload systemd config
-    - restart GOESImage
+
+- name: restart GOESImage
+  service: name="goesimage@{{ user.name }}.timer" state=restarted
