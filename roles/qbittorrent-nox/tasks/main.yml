@@ -4,7 +4,7 @@
 
 - name: Add qbittorrent profile
   copy:
-    src: qbittorent-nox.profile
+    src: qbittorrent-nox.profile
     dest: /home/{{ user.name }}/.config/firejail/qbittorrent-nox.profile
     owner: "{{ user.name }}"
     group: "{{ user.group }}"
