@@ -36,8 +36,8 @@
     enabled: yes
     state: started
 
-- name: Install kyocera-cups
+- name: Install kyocera-cups driver
   aur:
-    name: kyocera-cups
+    name: rastertokpsl-git
     user: "{{ user.name }}"
 
