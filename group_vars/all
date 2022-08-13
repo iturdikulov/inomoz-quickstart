@@ -94,6 +94,7 @@ base_packages:
     - yadm
     - clipmenu
     - unclutter
+    - xkeyboard-config
 
 filesystem_packages:
     - exfat-utils
