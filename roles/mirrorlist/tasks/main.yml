@@ -29,3 +29,6 @@
   notify:
     - reload systemd config
     - restart reflector update
+
+- name: Enable reflector timer
+  service: name=reflector.timer enabled=yes state=started

@@ -149,7 +149,9 @@ Some tests on complex tasks:
 - [x] media  
   copy something to clipboard and run `qcode`
 - [ ] mirrorlist  
-  `cat /etc/pacman.d/mirrorlist|grep Reflector`
+  - `sudo systemctl status reflector-update.timer`
+  - `sudo systemctl start reflector-update.service`
+  - `cat /etc/pacman.d/mirrorlist`
 - [ ] onlykey, passwordless measn you can enter password OR use onlykey    
   - passwordless sudo
   - passwordless ssh and gpg
