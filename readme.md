@@ -159,3 +159,4 @@ Some tests on complex tasks:
 - [ ] visidata
 - [ ] x
 - [ ] zeal
+- [ ] wacom
