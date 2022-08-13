@@ -4,10 +4,11 @@
     name: alsa-utils
     state: present
 
-- name: Install Pipewire
+- name: Install Pipewire and additional utilites
   pacman:
     name:
       - pipewire
       - pipewire-pulse
       - pavucontrol
+      - pamixer
     state: present
