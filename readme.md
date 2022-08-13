@@ -109,44 +109,42 @@ for example in user.yml "/mnt/var/" used as prefix for logs
 ArchLinux 5.18.16-arch1-1
 
 Some tests on complex tasks:
-
-- [ ] android, `adb devices` - show some devices connected, if they are connected
- 
-- [ ] base, contains a lot of packages and require a lot of time to install
-    - [ ] check pacman mirrors `sudo pacman -Syy`, must include core, extra, community, multilib
-    - [ ] validate hostname `hostname -f`
-    - [ ] validate group `id`
-    - [ ] validate logrotate `logrotate --debug /etc/logrotate.conf`, home/...
-    - [ ] run some applications: `tmux`, `git`, `ytfzf`, `ledger`, `ipython`, `sc-im`,  `bash`, `zsh`,  `krita`
-      , `inkscape`, `darktable`, `blender`, `godot`, `maim`,
-    - [ ] validate paccache service `systemctl status paccache.timer`
-
-- [ ] media
-
-- [ ] browsers:
-    - w3m, lynx
-    - using rofi: firefox, chromium, qutebrowser... can open url: 
-      , `xdg-open http://acid3.acidtests.org/`, `xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ`
-    - some browsers at first time require manual launch or extra configuration (tor browser)
-
-- [x] Arduino - `arduino-cli board list`
-- [x] Docker - `docker run hello-world`, run this after re-login
-
-- [ ] clipboard
-- [ ] colemak-dh, vconsole works, ru layout works
+- [x] android  
+  `adb devices` - show some devices connected, if they are connected
+- [ ] archive
+- [x] arduino  
+  `arduino-cli board list`
+- [x] base  
+  - check pacman mirrors `sudo pacman -Syy`, must include core, extra, community, multilib
+  - validate hostname `hostname -f`
+  - validate group `id`
+  - validate logrotate `logrotate --debug /etc/logrotate.conf`, home/...
+  - run some applications: `tmux`, `git`, `ytfzf`, `ledger`, `ipython`, `sc-im`,  `bash`, `zsh`,  `krita`
+    , `inkscape`, `darktable`, `blender`, `godot`, `maim`,
+  - validate paccache service `systemctl status paccache.timer`
+- [ ] borg
+- [ ] browsers  
+  - w3m, lynx
+  - using rofi: firefox, chromium, qutebrowser... can open url:
+    , `xdg-open http://acid3.acidtests.org/`, `xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+  - some browsers at first time require manual launch or extra configuration (tor browser)
+- [ ] colemak-dh  
+  vconsole works, en,ru layout works
 - [ ] cups
 - [ ] dconf
-- [ ] dotfiles
+- [x] docker  
+  `docker run hello-world`, run this after re-login
 - [ ] editors
 - [ ] filesystems
 - [ ] firejail
 - [ ] fonts
 - [ ] gnupg
 - [ ] goesimage
-- [ ] logitech
+- [ ] media
 - [ ] mirrorlist
 - [ ] mpv
-- [ ] nettools
+- [ ] nettools  
+  run `wireshark`
 - [ ] office
 - [ ] onlykey
 - [ ] pass
@@ -160,10 +158,11 @@ Some tests on complex tasks:
 - [ ] sysctl
 - [ ] sysmon
 - [ ] systemd
+- [ ] systemd-networkd
 - [ ] systemd-units
 - [ ] udisks
 - [ ] virtualenv
 - [ ] visidata
+- [ ] wacom
 - [ ] x
 - [ ] zeal
-- [ ] wacom
