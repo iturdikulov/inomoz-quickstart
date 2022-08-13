@@ -7,6 +7,11 @@
 - name: Add dh colemak keymap
   copy: src=colemak-dh.map.gz dest=/usr/share/kbd/keymaps/i386/colemak/colemak-dh.map.gz
 
+- name: Touch vconsole file
+  file:
+    path: /etc/vconsole.conf
+    state: touch
+
 - name: Enable colemak-dh for vconsole
   lineinfile: "dest=/etc/vconsole.conf
               regexp=^KEYMAP=
