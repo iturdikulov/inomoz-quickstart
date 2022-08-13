@@ -3,6 +3,7 @@
 - include_tasks: imagemagick.yml
 - include_tasks: flac2all.yml
 - include_tasks: qcode.yml
+- include_tasks: imv.yml
 
 - name: Install misc media codecs and helpers
   pacman:

@@ -125,7 +125,6 @@ Some tests on complex tasks:
 - [x] mpv
   - mpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
   - git clone https://github.com/inomoz/files_samples /tmp/files_samples
-  - mvi 'path_to_image_file'
   - umpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 - [x] browsers
   - w3m, lynx
