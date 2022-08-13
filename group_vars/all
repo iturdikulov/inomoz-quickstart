@@ -89,6 +89,7 @@ base_packages:
     - lm_sensors
     - feh
     - yadm
+    - clipmenu
 
 
 filesystem_packages:
