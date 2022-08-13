@@ -34,3 +34,8 @@
     owner: root
     group: root
 
+- name: Enable and start Docker
+  service:
+    name: docker.service
+    enabled: yes
+    state: started
