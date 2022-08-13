@@ -95,6 +95,9 @@ base_packages:
     - clipmenu
     - unclutter
     - vkmark
+    - mesa
+    - libva-mesa-driver
+    - vulkan-radeon
 
 filesystem_packages:
     - exfat-utils
