@@ -43,11 +43,7 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 
 # Install dotfiles
 ```shell
-yadm clone git@github.com:inomoz/dotfiles.git
-yadm reset --hard origin/main # be careful with this command
-ls -lFa ~
-
-# Copy your private config
+sudo ansible-playbook -i localhost playbook.yml --tags="dotfiles"
 ```
 
 # Install & configure suckless software
@@ -70,7 +66,7 @@ sudo make install
 ```
 
 # Install other packages
-sudo ansible-playbook -i localhost playbook.yml --skip-tags="base,gnupg,ssh"
+sudo ansible-playbook -i localhost playbook.yml --skip-tags="base,gnupg,ssh,dotfiles"
 ```
 
 4. It's recommended to remove imported gpg key and reboot, to validate the installation.
@@ -118,12 +114,12 @@ Some tests on complex tasks:
 
 - [ ] browsers:
     - w3m, lynx
-    - using rofi: firefox, chromium, qutebrowser... can open url: http://acid3.acidtests.org/
-      , `xdg-open http://acid3.acidtests.org/`
+    - using rofi: firefox, chromium, qutebrowser... can open url: 
+      , `xdg-open http://acid3.acidtests.org/`, `xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ`
     - some browsers at first time require manual launch or extra configuration (tor browser)
 
-- [ ] Arduion - `arduino-cli board list`
-- [ ] Docker - `docker run hello-world`
+- [x] Arduino - `arduino-cli board list`
+- [x] Docker - `docker run hello-world`, run this after re-login
 
 - [ ] clipboard
 - [ ] colemak-dh, vconsole works, ru layout works
