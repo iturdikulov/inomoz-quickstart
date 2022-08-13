@@ -6,6 +6,7 @@
     - { role: gnupg, tags: ['gnupg'] }
     - { role: ssh, tags: ['ssh'] }
     - { role: dotfiles, tags: ['dotfiles'] }
+    - { role: suckless, tags: ['suckless'] }
     - { role: x, tags: ['x'] }
     - { role: systemd, tags: ['systemd'] }
     - { role: dconf, tags: ['dconf'] }

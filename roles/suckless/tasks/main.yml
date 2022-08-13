@@ -1,0 +1,10 @@
+- name: Install suckless DWM
+  shell:
+    cmd: |
+      git clone git@github.com:inomoz/dwm.git
+      cd dwm
+      makepkg -fsri
+    chdir: /home/{{ user.name }}/Projects/
+  delegate_to: localhost
+  become: yes
+  become_user: "{{ user.name }}"
