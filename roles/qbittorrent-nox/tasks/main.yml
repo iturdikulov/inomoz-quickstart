@@ -5,10 +5,10 @@
 - name: Add qbittorrent profile
   copy:
     src: qbittorent-nox.profile
-    dest:  /home/{{ user.name }}/.config/firejail/qbittorrent-nox.profile
-    owner: {{ user.name }}
-    group: {{ user.group }}
-    mode: '0644'
+    dest: /home/{{ user.name }}/.config/firejail/qbittorrent-nox.profile
+    owner: "{{ user.name }}"
+    group: "{{ user.group }}"
+    mode: "0644"
 
 - name: Jail qbittorrent-nox
   file: src=/usr/bin/firejail
