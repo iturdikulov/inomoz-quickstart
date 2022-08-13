@@ -41,13 +41,18 @@ fi
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
-# Install dotfiles
+# Install dotfiles & doom emacs
 ```shell
 yadm clone git@github.com:inomoz/dotfiles.git
 yadm reset --hard origin/main # be careful with this command
 ls -lFa ~
 
-# Copy your private config
+git clone --depth 1 git@github.com:inomoz/doomemacs.git ~/.emacs.d
+cd ~/.emacs.d/bin/
+./doom install
+./doom doctor
+
+# Copy your private config files
 ```
 
 # Install & configure suckless software
