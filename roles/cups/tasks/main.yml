@@ -45,4 +45,5 @@
   copy:
     src: files/    # note the '/' <-- !!!
     dest: /home/{{ user.name }}/Downloads/
+    become: yes
 
