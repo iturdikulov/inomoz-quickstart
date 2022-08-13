@@ -129,39 +129,40 @@ Some tests on complex tasks:
   - test print page
 - [x] docker  
   `docker run hello-world`, run this after re-login
-- [ ] gnupg
-- [ ] goesimage
+- [x] gnupg
+  you able push to github with gpg signature
+- [ ] goesimage  
+  background image changed (require picom and feh)
 - [ ] media  
   copy something to clipboard and run `qcode`
-- [ ] mirrorlist
+- [ ] mirrorlist  
+  `cat /etc/pacman.d/mirrorlist|grep Reflector`
 - [ ] mpv
   - mpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
   - mvi 'path_to_image_file'
   - umpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-- [ ] nettools  
-  run `wireshark`
-- [ ] office
 - [ ] onlykey
 - [ ] pdf  
   `zathura path_to_pdf_file`
-- [ ] postgresql
-- [ ] pydev
 - [ ] sound
-- [ ] spell
-- [ ] ssh
-- [ ] sysctl
-- [ ] sysmon
-- [ ] systemd
-- [ ] systemd-networkd
-- [ ] systemd-units
-- [ ] udisks
-- [ ] virtualenv
-- [ ] visidata
-- [ ] wacom
-- [ ] x
+- [ ] ssh  
+  X11 forwarding works, ssh-agent works, ssh-add works
+- [x] systemd-networkd  
+    - `systemctl status systemd-colemak systemd-resolved`
+    - `ip a`
+- [ ] udisks  
+  you able to mount some usb devices
+- [ ] wacom    
+  precision in krita is working 
+- [ ] x  
+  - xdg-dir exists `ls -l ~`
+  - amdgpu works 
+  - `vkmark -b :duration=2.0 -b vertex:interleave=true -b vertex:interleave=false -b :duration=5.0 -b cube` score ~30k
 - [ ] zeal
+  - you need rsync docsets into ~/Documents/Zeal/docsets (`rsync -av docsets/ inoom@baikal:~/Documents/Zeal/docsets`)
+  - run `zeal` and validate it, including CSS styles
 - [ ] browsers
   - w3m, lynx
-  - using rofi: firefox, chromium, qutebrowser... can open url:
+  - using dmenu: firefox, chromium, qutebrowser... can open url:
     , `xdg-open http://acid3.acidtests.org/`, `xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ`
   - some browsers at first time require manual launch or extra configuration (tor browser)

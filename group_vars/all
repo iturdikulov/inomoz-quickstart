@@ -94,6 +94,7 @@ base_packages:
     - yadm
     - clipmenu
     - unclutter
+    - vkmark
 
 filesystem_packages:
     - exfat-utils
