@@ -123,8 +123,10 @@ Some tests on complex tasks:
   - validate paccache service `systemctl status paccache.timer`
 - [?] colemak-dh  
   vconsole works, layout works, layout switch works
-- [ ] cups  
-  test print page
+- [x] cups  
+  - add print in cups interface: http://localhost:631/admin
+  - drivers auto-copied into ~/Downloads/
+  - test print page
 - [x] docker  
   `docker run hello-world`, run this after re-login
 - [ ] gnupg
