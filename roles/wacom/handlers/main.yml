@@ -1,0 +1,9 @@
+---
+- name: Enable wacom service
+  systemd:
+    name: wacom
+    scope: user
+    enabled: yes
+    state: started
+  become: yes
+  become_user: "{{ user.name }}"

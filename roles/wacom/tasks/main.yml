@@ -1,0 +1,20 @@
+# If you have issues, try copy wacom config
+# sudo cp /usr/share/X11/xorg.conf.d/70-wacom.conf /etc/X11/xorg.conf.d/70-wacom.conf
+---
+- name: Install xf86-input-wacom
+  pacman:
+    name: xf86-input-wacom
+    state: present
+
+- name: Push wacom mapper script
+  template: src=wacom-config.sh.j2 dest=/usr/local/bin/wacom-config.sh mode=0755
+  
+- name: Configure wacom udev rule
+  template: src=99-wacom.rules.j2 dest=/etc/udev/rules.d/99-wacom.rules
+  
+- name: Push wacom service file
+  template:
+    src: wacom.service.j2
+    dest: /etc/systemd/user/wacom.service
+  notify:
+    - reload systemd config
