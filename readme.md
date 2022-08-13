@@ -50,11 +50,6 @@ ls -lFa ~
 git clone --depth 1 git@github.com:inomoz/doomemacs.git ~/.emacs.d
 cd ~/.emacs.d/bin/
 ./doom install
-./doom doctor
-
-# Open emacs end build some packages M-x
-pdf-tools-install
-vterm
 
 # Copy your private config files
 ```
@@ -79,12 +74,16 @@ sudo make install
 ```
 
 # Install other packages
-sudo ansible-playbook -i localhost playbook.yml --skip-tags="base,gnupg,ssh"
-```
-
-4. It's recommended to remove imported gpg key and reboot, to validate the installation.
-
 ```shell
+sudo ansible-playbook -i localhost playbook.yml --skip-tags="base,gnupg,ssh"
+
+./doom doctor
+
+# Open emacs end build some packages M-x
+pdf-tools-install
+vterm
+
+# It's recommended to reboot, to validate the installation.
 reboot
 ```
 
