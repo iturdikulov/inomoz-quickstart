@@ -40,4 +40,5 @@
     - { role: udisks, tags: ['udisks'] }
     - { role: virtualenv, tags: ['virtualenv'] }
     - { role: visidata, tags: ['visidata'] }
+    - { role: wacom, tags: ['wacom'] }
     - { role: zeal, tags: ['zeal'] }
