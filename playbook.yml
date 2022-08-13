@@ -16,6 +16,7 @@
     - { role: clipboard, tags: ['clipboard'] }
     - { role: colemak-dh, tags: ['colemak-dh'] }
     - { role: cups, tags: ['cups'] }
+    - { role: docker, tags: ['docker'] }
     - { role: editors, tags: ['editors'] }
     - { role: filesystems, tags: ['filesystems'] }
     - { role: fonts, tags: ['fonts'] }
