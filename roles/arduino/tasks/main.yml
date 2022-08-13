@@ -5,4 +5,4 @@
     state: present
 
 - name: Install arduino core
-  ansible.builtin.shell: arduino-cli core install arduino:avr
+  command: arduino-cli core install arduino:avr
