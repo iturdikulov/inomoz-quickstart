@@ -2,7 +2,7 @@
 - name: Enable colemak for XOrg libinput
   template:
     src: 40-libinput-colemak.conf.j2
-    dest: /etc/X11/xorg.conf.d/40-libinput-colemak.conf
+    dest: /etc/X11/xorg.conf.d/00-keyboard.conf
 
 - name: Add dh colemak keymap
   copy: src=colemak-dh.map.gz dest=/usr/share/kbd/keymaps/i386/colemak/colemak-dh.map.gz
