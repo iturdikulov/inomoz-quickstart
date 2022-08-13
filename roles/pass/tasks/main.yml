@@ -8,10 +8,3 @@
   pacman:
     name: pass-otp
     state: present
-
-- name: Install rofi-pass
-  pacman:
-    name: rofi-pass
-    state: present
-  tags:
-    - rofi
