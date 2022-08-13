@@ -1,8 +1,0 @@
-- name: Install dotfiles
-  shell:
-    cmd: |
-      yadm clone https://github.com/inomoz/dotfiles
-      yadm reset --hard origin/main
-  delegate_to: localhost
-  become: yes
-  become_user: "{{ user.name }}"

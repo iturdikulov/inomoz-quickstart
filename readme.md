@@ -43,13 +43,18 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 
 # Install dotfiles
 ```shell
-sudo ansible-playbook -i localhost playbook.yml --tags="dotfiles"
+yadm clone git@github.com:inomoz/dotfiles.git
+yadm reset --hard origin/main # be careful with this command
+ls -lFa ~
+
+# Copy your private config
 ```
 
 # Install & configure suckless software
 ```shell
 mkdir -p ~/Projects/suckless/
 cd ~/Projects/suckless/
+git clone git@github.com:inomoz/dwm.git
 git clone git@github.com:inomoz/st.git
 git clone git@github.com:inomoz/slstatus.git
 
@@ -65,7 +70,7 @@ sudo make install
 ```
 
 # Install other packages
-sudo ansible-playbook -i localhost playbook.yml --skip-tags="base,gnupg,ssh,dotfiles"
+sudo ansible-playbook -i localhost playbook.yml --skip-tags="base,gnupg,ssh"
 ```
 
 4. It's recommended to remove imported gpg key and reboot, to validate the installation.
