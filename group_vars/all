@@ -10,6 +10,7 @@ user:
 
 hostname: baikal
 network_adapter: enp1s0
+custom_x11_config: True
 
 dotfiles:
     url: git@github.com:inomoz/dotfiles.git

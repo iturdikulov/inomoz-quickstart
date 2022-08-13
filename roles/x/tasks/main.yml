@@ -28,6 +28,12 @@
   tags:
     - user
 
+- name: Copy Xorg configuration
+  copy:
+    src: files/    # note the '/' <-- !!!
+    dest: /etc/X11/xorg.conf.d/
+  when: custom_x11_config == True
+
 - include_tasks: autorandr.yml
 - include_tasks: autocutsel.yml
 - include_tasks: xdg.yml
