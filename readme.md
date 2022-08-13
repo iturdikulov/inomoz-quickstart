@@ -97,6 +97,7 @@ for example in user.yml "/mnt/var/" used as prefix for logs
 - https://github.com/pigmonkey/spark
 
 # TODO
+- onlykey
 - dmenu install
 - systemd... resolv.... ntp
 - user ssh key info
@@ -141,10 +142,15 @@ Some tests on complex tasks:
   - mpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
   - mvi 'path_to_image_file'
   - umpv 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-- [ ] onlykey
+- [ ] onlykey, passwordless measn you can enter password OR use onlykey    
+  - passwordless sudo
+  - passwordless ssh and gpg
+  - passwordless pass
 - [ ] pdf  
   `zathura path_to_pdf_file`
-- [ ] sound
+- [ ] sound  
+  - sound is working 
+  - pavucontrol - show sound devices
 - [ ] ssh  
   X11 forwarding works, ssh-agent works, ssh-add works
 - [x] systemd-networkd  
@@ -156,8 +162,8 @@ Some tests on complex tasks:
   precision in krita is working 
 - [ ] x  
   - xdg-dir exists `ls -l ~`
-  - amdgpu works 
   - `vkmark -b :duration=2.0 -b vertex:interleave=true -b vertex:interleave=false -b :duration=5.0 -b cube` score ~30k
+  - resolution was set correctly by autorandr
 - [ ] zeal
   - you need rsync docsets into ~/Documents/Zeal/docsets (`rsync -av docsets/ inoom@baikal:~/Documents/Zeal/docsets`)
   - run `zeal` and validate it, including CSS styles
