@@ -23,7 +23,7 @@
     - { role: logitech, tags: ['logitech'] }
     - { role: media, tags: ['media'] }
     - { role: mirrorlist, tags: ['mirrorlist'] }
-    - { role: mpv, tags: ['mpv  '] }
+    - { role: mpv, tags: ['mpv'] }
     - { role: nettools, tags: ['nettools'] }
     - { role: office, tags: ['office'] }
     - { role: onlykey, tags: ['onlykey'] }
