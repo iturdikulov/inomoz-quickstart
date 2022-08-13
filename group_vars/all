@@ -36,7 +36,7 @@ gnupg:
     emulate_ssh: True
 
 editors:
-    - emacs
+    - emacs-nativecomp
     - nvim
 
 base_packages:
