@@ -16,3 +16,12 @@
     state: present
   tags:
     - shell
+
+- name: Create ZSH cache dir
+  file:
+    path: /home/{{ user.name }}/.cache/zsh
+    state: directory
+    owner: "{{ user.name }}"
+    group: "{{ user.group }}"
+  tags:
+    - shell
