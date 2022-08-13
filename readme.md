@@ -122,6 +122,9 @@ Some tests on complex tasks:
       , `xdg-open http://acid3.acidtests.org/`
     - some browsers at first time require manual launch or extra configuration (tor browser)
 
+- [ ] Arduion - `arduino-cli board list`
+- [ ] Docker - `docker run hello-world`
+
 - [ ] clipboard
 - [ ] colemak-dh, vconsole works, ru layout works
 - [ ] cups
