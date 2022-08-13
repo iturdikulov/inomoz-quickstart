@@ -3,7 +3,6 @@
     cmd: |
       yadm clone https://github.com/inomoz/dotfiles
       yadm reset --hard origin/main
-      yadm status
   delegate_to: localhost
   become: yes
   become_user: "{{ user.name }}"
