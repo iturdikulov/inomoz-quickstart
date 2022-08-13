@@ -35,3 +35,9 @@
     name: cups.socket
     enabled: yes
     state: started
+
+- name: Install kyocera-cups
+  aur:
+    name: kyocera-cups
+    user: "{{ user.name }}"
+
