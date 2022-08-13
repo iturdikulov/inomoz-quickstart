@@ -172,8 +172,3 @@ Some tests on complex tasks:
 - [ ] zeal
   - you need rsync docsets into ~/Documents/Zeal/docsets (`rsync -av docsets/ inoom@baikal:~/Documents/Zeal/docsets`)
   - run `zeal` and validate it, including CSS styles
-- [ ] browsers
-  - w3m, lynx
-  - using dmenu: firefox, chromium, qutebrowser... can open url:
-    , `xdg-open http://acid3.acidtests.org/`, `xdg-open https://www.youtube.com/watch?v=dQw4w9WgXcQ`
-  - some browsers at first time require manual launch or extra configuration (tor browser)
