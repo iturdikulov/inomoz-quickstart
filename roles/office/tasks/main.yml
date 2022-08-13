@@ -14,13 +14,6 @@
     name: gnuplot
     state: present
 
-- name: Install xsv
-  aur:
-    name: xsv
-    user: "{{ user.name }}"
-  tags:
-    - aur
-
 - name: Install pandoc and dependencies
   aur:
     name: pandoc-bin
