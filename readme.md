@@ -52,6 +52,10 @@ cd ~/.emacs.d/bin/
 ./doom install
 ./doom doctor
 
+# Open emacs end build some packages M-x
+pdf-tools-install
+vterm
+
 # Copy your private config files
 ```
 
