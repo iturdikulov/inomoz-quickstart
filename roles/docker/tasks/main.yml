@@ -33,6 +33,4 @@
     mode: 0400
     owner: root
     group: root
-    notify:
-      - restart_docker_service
 
