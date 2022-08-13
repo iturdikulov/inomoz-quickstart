@@ -146,7 +146,6 @@ Some tests on complex tasks:
 - [ ] pdf
 - [ ] postgresql
 - [ ] pydev
-- [ ] qbittorrent-nox
 - [ ] ripgrep
 - [ ] sound
 - [ ] spell

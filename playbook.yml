@@ -32,7 +32,6 @@
     - { role: pdf, tags: ['pdf'] }
     - { role: postgresql, tags: ['postgresql'] }
     - { role: pydev, tags: ['pydev'] }
-    - { role: qbittorrent-nox, tags: ['qbittorrent-nox'] }
     - { role: ripgrep, tags: ['ripgrep'] }
     - { role: sound, tags: ['sound'] }
     - { role: spell, tags: ['spell'] }
