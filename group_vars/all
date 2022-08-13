@@ -145,7 +145,7 @@ udisks:
 goesimage:
     run_time: 15min
     run_boot_delay: 2min
-    flags: -w -e
+    flags: -e
 
 base_fonts:
     - adobe-source-code-pro-fonts
