@@ -2,6 +2,14 @@
 - name: Install qbittorrent-nox
   pacman: name=qbittorrent-nox state=present
 
+- name: Add qbittorrent profile
+  copy:
+    src: qbittorent-nox.profile
+    dest:  /home/{{ user.name }}/.config/firejail/qbittorrent-nox.profile
+    owner: {{ user.name }}
+    group: {{ user.group }}
+    mode: '0644'
+
 - name: Jail qbittorrent-nox
   file: src=/usr/bin/firejail
         dest=/usr/local/bin/qbittorrent-nox
