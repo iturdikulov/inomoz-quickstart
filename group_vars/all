@@ -55,6 +55,7 @@ base_packages:
     - dateutils
     - arch-wiki-lite
     - jq
+    - tree-sitter
     - termdown
     - fzf
     - cpulimit
