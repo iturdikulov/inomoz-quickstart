@@ -143,7 +143,8 @@ Some tests on complex tasks:
 - [x] gnupg
   you able push to github with gpg signature
 - [x] goesimage  
-  - `systemctl restart --user GOESImage`
+  - `systemctl enable --user --now goesimage.timer`
+  - `systemctl status --user goesimage.timer`
 - [ ] media  
   copy something to clipboard and run `qcode`
 - [ ] mirrorlist  
