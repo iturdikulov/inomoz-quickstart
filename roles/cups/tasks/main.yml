@@ -44,5 +44,5 @@
 - name: Copy Cups drivers
   copy:
     src: files/    # note the '/' <-- !!!
-    dest: /etc/cups/ppd/
+    dest: /home/{{ user.name }}/Downloads/
 
