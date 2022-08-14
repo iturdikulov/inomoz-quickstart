@@ -79,6 +79,7 @@ sudo ansible-playbook -i localhost playbook.yml --skip-tags=base,gnupg,ssh
 # Open emacs end build some packages M-x
 pdf-tools-install
 vterm
+plantuml-download-jar
 
 # It's recommended to reboot, to validate the installation.
 reboot
