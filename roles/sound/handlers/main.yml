@@ -1,5 +1,5 @@
 ---
-- name: enable pipewire socket
+- name: enable pipewire pulse socket
   systemd:
     name: pipewire-pulse.socket
     scope: user

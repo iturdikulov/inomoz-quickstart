@@ -13,4 +13,4 @@
       - pamixer
     state: present
   notify:
-    - enable pipewire socket
+    - enable pipewire pulse socket
