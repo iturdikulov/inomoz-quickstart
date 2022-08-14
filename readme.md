@@ -18,7 +18,7 @@ git submodule init && git submodule update
 
 ```shell
 # install core
-sudo ansible-playbook -i localhost playbook.yml --tags="base,gnupg,ssh"
+sudo ansible-playbook -i localhost playbook.yml --tags=base,gnupg,ssh
 
 # import gpg key
 gpg --import ../gpg.asc
@@ -73,7 +73,7 @@ sudo make install
 
 # Install other packages
 ```shell
-sudo ansible-playbook -i localhost playbook.yml --skip-tags="base,gnupg,ssh"
+sudo ansible-playbook -i localhost playbook.yml --skip-tags=base,gnupg,ssh
 
 ./doom doctor
 
@@ -148,10 +148,6 @@ Some tests on complex tasks:
   - `sudo systemctl enable reflector-update.timer`
   - `sudo systemctl start reflector-update.service`
   - `cat /etc/pacman.d/mirrorlist`
-- [ ] onlykey, passwordless measn you can enter password OR use onlykey    
-  - passwordless sudo
-  - passwordless ssh and gpg
-  - passwordless pass
 - [x] pdf  
   `zathura path_to_pdf_file`
 - [x] postgresql  
