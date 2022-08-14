@@ -180,5 +180,5 @@ Some tests on complex tasks:
   - `vkmark -b :duration=2.0 -b vertex:interleave=true -b vertex:interleave=false -b :duration=5.0 -b cube` score ~30k
   - resolution was set correctly by autorandr
 - [ ] zeal
-  - you need rsync docsets into ~/Documents/Zeal/docsets (`rsync -av docsets/ inoom@baikal:~/Documents/zeal/docsets`)
+  - you need rsync docsets into ~/Documents/Zeal/docsets (`rsync -av zeal/ inom@baikal:~/Documents/zeal/docsets`)
   - run `zeal` and validate it, including CSS styles
