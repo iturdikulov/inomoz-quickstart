@@ -38,6 +38,22 @@ gnupg:
 editors:
     - emacs-nativecomp
     - neovim
+    - cmake
+    - direnv
+    - editorconfig-core-c
+    - npm
+    - graphviz
+    - plantuml
+    - rust-analyzer
+    - shellcheck
+    - shfmt
+    - tidy
+    - stylelint
+	- python-pyflakes
+	- python-isort
+	- python-pytest
+	- python-nose
+
 
 base_packages:
     - openssh
