@@ -148,7 +148,7 @@ Some tests on complex tasks:
   - `systemctl status --user goesimage.timer`
 - [x] media  
   copy something to clipboard and run `qcode`
-- [ ] mirrorlist  
+- [x] mirrorlist  
   - `sudo systemctl enable reflector-update.timer`
   - `sudo systemctl start reflector-update.service`
   - `cat /etc/pacman.d/mirrorlist`
@@ -156,8 +156,9 @@ Some tests on complex tasks:
   - passwordless sudo
   - passwordless ssh and gpg
   - passwordless pass
-- [ ] pdf  
+- [x] pdf  
   `zathura path_to_pdf_file`
+- [ ] postgresql
 - [ ] sound  
   - sound is working 
   - pavucontrol - show sound devices
@@ -168,6 +169,8 @@ Some tests on complex tasks:
     - `ip a`
 - [ ] udisks  
   you able to mount some usb devices
+- [ ] visidata  
+  `xdg-open ...csv`
 - [ ] wacom    
   precision in krita is working 
 - [ ] x  
