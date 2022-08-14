@@ -1,9 +1,9 @@
 ---
-- name: enable pipewire pulse socket
+- name: restart pulse as user
   systemd:
-    name: pipewire-pulse.socket
+    name: pipewire-pulse.service
     scope: user
-    state: enabled
+    state: restarted
   become: yes
   become_user: "{{ user.name }}"
   environment:

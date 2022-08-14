@@ -12,5 +12,3 @@
       - pavucontrol
       - pamixer
     state: present
-  notify:
-    - enable pipewire pulse socket
