@@ -112,13 +112,12 @@
     - qutebrowser
     - firejail
 
-- name: Push rofi browser chooser
+- name: Push browser chooser
   template:
     src: browser.sh.j2
     dest: /usr/local/bin/browser
     mode: 0755
   tags:
-    - rofi
     - chooser
 
 - name: Create local desktop application dir
@@ -126,15 +125,13 @@
     path: /usr/local/share/applications
     state: directory
   tags:
-    - rofi
     - chooser
 
-- name: Push rofi browser chooser desktop file
+- name: Push browser chooser desktop file
   copy:
     src: browser.desktop
     dest: /usr/local/share/applications/browser.desktop
   tags:
-    - rofi
     - chooser
 
 - name: Install surfraw
@@ -152,12 +149,3 @@
   tags:
     - surfraw
     - chooser
-
-- name: Push surfraw-rofi script
-  copy:
-    src: surfraw-rofi
-    dest: /usr/local/bin/surfraw-rofi
-    mode: 0755
-  tags:
-    - surfraw
-    - rofi
