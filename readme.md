@@ -94,13 +94,6 @@ for example in user.yml "/var/" used as prefix for logs
 
 - https://github.com/pigmonkey/spark
 
-# TODO
-- systemd... resolv.... ntp
-- user ssh key info
-- validate systemd enabled services, like reflector
-- https://habr.com/ru/post/479540/
-- https://venthur.de/2021-12-19-managing-dotfiles-with-stow.html
-
 # Manual tests
 
 ArchLinux 5.18.16-arch1-1
@@ -181,3 +174,5 @@ Some tests on complex tasks:
 - [ ] Check pass and gpg stuff
 - [ ] Check browser pass integration
 - [ ] Sync browser bookmarks
+- [ ] Validate systemd enabled services, like reflector, services list:  
+`systemctl list-unit-files --type=service`
