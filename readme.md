@@ -1,7 +1,5 @@
 # My quick-start archlinux installation workflow
 
-# NOT TESTED!
-
 Clone this repository and run commands in the project root directory.
 
 1. First, sync mirrors and install Ansible with dependencies
@@ -97,9 +95,6 @@ for example in user.yml "/mnt/var/" used as prefix for logs
 - https://github.com/pigmonkey/spark
 
 # TODO
-- rofi -> dmenu
-- onlykey
-- dmenu install
 - systemd... resolv.... ntp
 - user ssh key info
 - validate systemd enabled services, like reflector
@@ -159,26 +154,28 @@ Some tests on complex tasks:
   - passwordless pass
 - [x] pdf  
   `zathura path_to_pdf_file`
-- [ ] postgresql
-- [ ] sound  
-  - sound is working 
-  - pavucontrol - show sound devices
-- [ ] ssh  
-  X11 forwarding works, ssh-agent works, ssh-add works
+- [x] postgresql  
+  ```shell 
+  create database test
+  ls /var/lib/postgresql/data/
+  dropdb test
+  ```
 - [x] systemd-networkd  
     - `systemctl status systemd-colemak systemd-resolved`
     - `ip a`
-- [ ] udisks  
+- [x] udisks  
   you able to mount some usb devices
-- [ ] visidata  
+- [x] visidata  
   `xdg-open ...csv`
-- [ ] wacom    
+- [x] wacom    
   - `xsetwacom list devices`
   - precision in krita is working 
-- [ ] x  
+- [x] x  
   - xdg-dir exists `ls -l ~`
   - `vkmark -b :duration=2.0 -b vertex:interleave=true -b vertex:interleave=false -b :duration=5.0 -b cube` score ~30k
   - resolution was set correctly by autorandr
-- [ ] zeal
-  - you need rsync docsets into ~/Documents/Zeal/docsets (`rsync --mkpath -av zeal/ inom@baikal:~/Documents/zeal/docsets`)
+- [x] zeal
+  - you need rsync docsets into ~/Documents/Zeal/docsets 
+  -  `tar zcvf - zeal/ | ssh -o IdentityAgent=none inom@baikal "mkdir -p ~/Documents/zeal; cd ~/Documents/; tar xvzf -"`
   - run `zeal` and validate it, including CSS styles
+  - install base docsets and custom `https://zealusercontributions.vercel.app/`
