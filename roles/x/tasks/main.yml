@@ -42,7 +42,7 @@
   tags:
     - aur
 
-- name: Install qt5ct, independent of DE configuration utility
+- name: Install configuration utility
   pacman: qt5ct
 
 - name: Copy Xorg configuration
