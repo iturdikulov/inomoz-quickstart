@@ -117,7 +117,7 @@ browser_choices:
 
 postgresql:
     enable: True
-    root: /mnt/var/lib/postgres
+    root: /var/lib/postgres
 
 bluetooth:
     disable: False
