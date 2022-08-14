@@ -12,3 +12,5 @@
       - pavucontrol
       - pamixer
     state: present
+  notify:
+    - enable pipewire socket
