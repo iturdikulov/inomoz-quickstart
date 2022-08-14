@@ -97,6 +97,7 @@ for example in user.yml "/mnt/var/" used as prefix for logs
 - https://github.com/pigmonkey/spark
 
 # TODO
+- rofi -> dmenu
 - onlykey
 - dmenu install
 - systemd... resolv.... ntp
@@ -172,11 +173,12 @@ Some tests on complex tasks:
 - [ ] visidata  
   `xdg-open ...csv`
 - [ ] wacom    
-  precision in krita is working 
+  - `xsetwacom list devices`
+  - precision in krita is working 
 - [ ] x  
   - xdg-dir exists `ls -l ~`
   - `vkmark -b :duration=2.0 -b vertex:interleave=true -b vertex:interleave=false -b :duration=5.0 -b cube` score ~30k
   - resolution was set correctly by autorandr
 - [ ] zeal
-  - you need rsync docsets into ~/Documents/Zeal/docsets (`rsync -av docsets/ inoom@baikal:~/Documents/Zeal/docsets`)
+  - you need rsync docsets into ~/Documents/Zeal/docsets (`rsync -av docsets/ inoom@baikal:~/Documents/zeal/docsets`)
   - run `zeal` and validate it, including CSS styles
