@@ -27,3 +27,8 @@
   pacman:
     name: zbar
     state: present
+
+- name: Install kdenlive
+  pacman:
+    name: kdenlive
+    state: present
