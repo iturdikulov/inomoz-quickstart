@@ -28,6 +28,20 @@
   tags:
     - user
 
+- name: Install breeze
+  pacman: name=breeze state=present
+
+- name: Install breeze-icons
+  pacman: name=breeze-icons state=present
+
+- name: Install breeze-gtk
+  pacman: name=breeze-gtk state=present
+
+- name: Install cursor-theme-macos-big-sur
+  aur: name=cursor-theme-macos-big-sur user={{ user.name }}
+  tags:
+    - aur
+
 - name: Copy Xorg configuration
   copy:
     src: files/    # note the '/' <-- !!!
