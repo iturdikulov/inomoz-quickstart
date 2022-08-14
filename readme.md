@@ -175,4 +175,5 @@ Some tests on complex tasks:
 - [ ] Check browser pass integration
 - [ ] Sync browser bookmarks
 - [ ] Validate systemd enabled services, like reflector, services list:  
+- [ ] You can install lxapperance to configure theme/fonts/etc and remove it after.
 `systemctl list-unit-files --type=service`
