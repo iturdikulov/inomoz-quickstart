@@ -20,7 +20,6 @@ aur:
     dir: aur
     packages:
         - pikaur
-        - expac
         - zsh-theme-powerlevel10k-git
         - inkscape-open-symbols-git
         - quickemu
@@ -116,6 +115,7 @@ base_packages:
     - mesa
     - libva-mesa-driver
     - vulkan-radeon
+    - expac
 
 filesystem_packages:
     - exfat-utils
