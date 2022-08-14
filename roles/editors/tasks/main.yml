@@ -3,3 +3,21 @@
   pacman:
     name: "{{ editors }}"
     state: present
+
+- name: Push emacs service file
+  copy:
+    src: emacs.service
+    dest: /etc/systemd/user/
+  notify:
+    - reload systemd config
+
+- name: Enable emacs.service
+  systemd:
+    name: emacs.service
+    scope: user
+    enabled: yes
+    state: started
+  become: yes
+  become_user: "{{ user.name }}"
+  environment:
+    XDG_RUNTIME_DIR: "/run/user/{{ user.uid }}"

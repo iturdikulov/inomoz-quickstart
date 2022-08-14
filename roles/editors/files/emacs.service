@@ -1,0 +1,13 @@
+[Unit]
+Description=Emacs server daemon
+Documentation=info:emacs man:emacs(1) https://gnu.org/software/emacs/
+
+[Service]
+Environment="DISPLAY=:0"
+Type=forking
+ExecStart=/bin/bash -l -c 'emacs --daemon && sleep 4 && DISPLAY=:0 emacsclient -c --eval "(delete-frame)"'
+ExecStop=/usr/bin/emacsclient --eval "(kill-emacs)"
+Restart=always
+
+[Install]
+WantedBy=graphical.target
