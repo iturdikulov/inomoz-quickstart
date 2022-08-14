@@ -182,4 +182,5 @@ Some tests on complex tasks:
 - https://wiki.archlinux.org/title/Hardware_video_acceleration
 - [ ] Check systemd units  
 `systemctl list-unit-files --type=service`
+- [ ] Configure backups and system snapshots
 - [ ] Remove ansible (too heavy)
