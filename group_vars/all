@@ -49,10 +49,10 @@ editors:
     - shfmt
     - tidy
     - stylelint
-	- python-pyflakes
-	- python-isort
-	- python-pytest
-	- python-nose
+    - python-pyflakes
+    - python-isort
+    - python-pytest
+    - python-nose
 
 
 base_packages:
