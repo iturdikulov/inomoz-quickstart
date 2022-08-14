@@ -48,8 +48,6 @@ ls -lFa ~
 git clone --depth 1 git@github.com:inomoz/doomemacs.git ~/.emacs.d
 cd ~/.emacs.d/bin/
 ./doom install
-
-# Copy your private config files
 ```
 
 # Install & configure suckless software
@@ -75,6 +73,7 @@ sudo make install
 ```shell
 sudo ansible-playbook -i localhost playbook.yml --skip-tags=base,gnupg,ssh
 
+# Validate emacs
 ./doom doctor
 
 # Open emacs end build some packages M-x
@@ -175,3 +174,9 @@ Some tests on complex tasks:
   -  `tar zcvf - zeal/ | ssh -o IdentityAgent=none inom@baikal "mkdir -p ~/Documents/zeal; cd ~/Documents/; tar xvzf -"`
   - run `zeal` and validate it, including CSS styles
   - install base docsets and custom `https://zealusercontributions.vercel.app/`
+
+- [ ] Sync your files
+- [ ] Try to add ssh key and login (external service), git pull, etc
+- [ ] Check pass and gpg stuff
+- [ ] Check browser pass integration
+- [ ] Sync browser bookmarks
