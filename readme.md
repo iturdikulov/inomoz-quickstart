@@ -1,6 +1,7 @@
 # My quick-start archlinux installation workflow
 
 Clone this repository and run commands in the project root directory.
+Require ~ 20GB of free space (last time full installation was 13GB).
 
 1. First, sync mirrors and install Ansible with dependencies
 
