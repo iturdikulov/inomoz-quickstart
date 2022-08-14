@@ -88,7 +88,7 @@ reboot
 # Info
 
 some directories are preconfigured, you can change them if you want
-for example in user.yml "/mnt/var/" used as prefix for logs
+for example in user.yml "/var/" used as prefix for logs
 
 # Special thanks
 
