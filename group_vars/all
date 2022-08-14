@@ -53,6 +53,7 @@ editors:
     - python-isort
     - python-pytest
     - python-nose
+    - languagetool
 
 
 base_packages:
