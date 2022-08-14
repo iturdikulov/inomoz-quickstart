@@ -170,6 +170,7 @@ Some tests on complex tasks:
   - run `zeal` and validate it, including CSS styles
   - install base docsets and custom `https://zealusercontributions.vercel.app/`
 
+# Notes
 - [ ] Sync your files
 - [ ] Try to add ssh key and login (external service), git pull, etc
 - [ ] Check pass and gpg stuff
@@ -181,3 +182,4 @@ Some tests on complex tasks:
 - https://wiki.archlinux.org/title/Hardware_video_acceleration
 - [ ] Check systemd units  
 `systemctl list-unit-files --type=service`
+- [ ] Remove ansible (too heavy)
