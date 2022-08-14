@@ -177,4 +177,7 @@ Some tests on complex tasks:
 - [ ] Sync browser bookmarks
 - [ ] Validate systemd enabled services, like reflector, services list:  
 - [ ] You can install lxapperance to configure theme/fonts/etc and remove it after.
+- [ ] Verify and configure vappi (firefox, etc)  
+- https://wiki.archlinux.org/title/Hardware_video_acceleration
+- [ ] Check systemd units  
 `systemctl list-unit-files --type=service`
