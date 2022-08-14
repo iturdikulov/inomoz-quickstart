@@ -20,6 +20,7 @@ aur:
     dir: aur
     packages:
         - pikaur
+        - expac
         - zsh-theme-powerlevel10k-git
         - inkscape-open-symbols-git
         - quickemu
