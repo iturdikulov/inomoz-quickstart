@@ -92,6 +92,7 @@ base_packages:
     - lm_sensors
     - feh
     - yadm
+    - dmenu
     - clipmenu
     - unclutter
     - vkmark
