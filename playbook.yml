@@ -26,7 +26,7 @@
     - { role: mpv, tags: ['mpv'] }
     - { role: nettools, tags: ['nettools'] }
     - { role: office, tags: ['office'] }
-    - { role: onlykey, tags: ['onlykey'] }
+    - { role: smartcard, tags: ['smartcard'] }
     - { role: pass, tags: ['pass'] }
     - { role: pdf, tags: ['pdf'] }
     - { role: postgresql, tags: ['postgresql'] }

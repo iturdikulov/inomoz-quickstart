@@ -1,9 +1,4 @@
 ---
-- name: Install onlykey
-  aur: name=onlykey user={{ user.name }}
-  tags:
-    - aur
-
 - name: Install smartcard libs/tools
   pacman:
     name:
