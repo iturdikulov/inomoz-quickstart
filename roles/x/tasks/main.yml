@@ -43,7 +43,7 @@
     - aur
 
 - name: Install configuration utility
-  pacman: qt5ct
+  pacman: name=qt5ct state=present
 
 - name: Copy Xorg configuration
   copy:
