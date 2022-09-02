@@ -57,6 +57,7 @@ editors:
 
 
 base_packages:
+    - alacritty
     - openssh
     - base-devel
     - man-db
