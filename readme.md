@@ -56,7 +56,6 @@ cd ~/.emacs.d/bin/
 mkdir -p ~/Projects/suckless/
 cd ~/Projects/suckless/
 git clone git@github.com:inomoz/dwm.git
-git clone git@github.com:inomoz/st.git
 git clone git@github.com:inomoz/slstatus.git
 
 cd dwm
