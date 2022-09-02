@@ -61,9 +61,6 @@ git clone git@github.com:inomoz/slstatus.git
 cd dwm
 makepkg -fsri
 
-cd ../st
-makepkg -fsri
-
 cd ../slstatus
 make
 sudo make install
